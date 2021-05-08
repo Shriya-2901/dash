@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <input type="checkbox" name="" id="sidebar-toggle">
+            <div class="sidebar">
+                <div class="sidebar-brand">
+                    <div class="brand-flex">
+                        <img src="logo.png" width="30px" alt="profile">
+                        <div class="brand-icons">
+                            <span class="las la-bell"></span>
+                            <span class="las la-user-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-main">
+                    <div class="sidebar-user">
+                        <img src="kotaro.jpg" width="60px">
+                        <div>
+                            <h3>Shriya Shukla</h3>
+                            <span>shriyashukla2901@gmail.com</span>
+                        </div>
+                        </div>
+                        
+                    <div class="sidebar-menu">
+                       
+                        <div class="menu-head">
+                            <span>Dashboard</span>
+                        </div>
+                        <ul>
+                            <li><a href="#finance">
+                                <span class="las la-balance-scale"></span>
+                                Finance
+                            </a></li>
+                            <li><a href="#tt">
+                                <span class="las la-table"></span>
+                                Timetable
+                            </a></li>
+                            </ul>
+                            <div class="menu-head">
+                            <span>Applications</span></div>
+                            <ul>
+                                
+                            <li><a href="#mytodo">
+                                <span class="las la-tasks"></span>
+                                To do list
+                            </a></li>
+                            <li><a href="#projects">
+                                <span class="las la-laptop-code"></span>
+                                Projects
+                            </a></li>
+                            <li><a href="#play">
+                                <span class="las la-play-circle"></span>
+                                Playlist
+                            </a></li>
+                            <li><a href="#calenders">
+                                <span class="las la-calendar"></span>
+                                Calender
+                            </a></li>
+                            <li><a href="">
+                                <span class="las la-sign-out-alt"></span>
+                                Logout
+                            </a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                </div>
+           <div class="main-content">
+               <header>
+                   <div class="menu-toggle">
+                       <lable for="sidebar-toggle">
+                           <span class="las la-bars"></span>
+                       </lable>
+                   </div>
+                   <div class="search">
+                    <span class="las la-search" ></span>
+                       <input type="text" placeholder="Search...">
+                   </div>
+                   
+                   <div class="icon">
+                       
+                       <span class="las la-sms"></span>
+                       <span class="las la-bookmark"></span>
+                       <span class="las la-universal-access"></span>
+                       <span class="las la-phone-volume"></span>
+                       <span class="las la-exclaimation"></span>
+                   </div>
+               </header>
+               <main>
+                   <div class="page-header">
+                       <h1>Analytics</h1>
+                      
+                   
+                   <div class="header-actions">
+                       <button>
+                       <span class="las la-file-export"></span>
+                       Export
+                    </button>
+                    <button>
+                        <span class="las la-tools"></span>
+                        Settings
+                     </button>
+                     </div>
+                   </div>
+                   <a id="finance">
+                   <div class="cards">
+                       <div class="card-single">
+                           <div class="card-flex">
+                               <div class="card-info">
+                                   <div class="card-head">
+                                       <span>Topics</span>
+                                       <br>
+                                       <small>Number of topics</small>
+                                   </div>
+                               </div>
+                               <div class="card-chart">
+                                   <span class="las la-chart-line"></span>
+                               </div>
+                               <h2>50</h2>
+                           </div>
+                       </div>
+                       <div class="card-single">
+                        <div class="card-flex">
+                            <div class="card-info">
+                                <div class="card-head">
+                                    <span>Budget</span>
+                                    <br>
+                                    <small>Monthly Budget</small>
+                                </div>
+                            </div>
+                            <div class="card-chart">
+                                <span class="las la-hand-holding-usd"></span>
+                            </div>
+                            <h2>10,000</h2>
+                        </div>
+                        </div>
+                        <div class="card-single">
+                            <div class="card-flex">
+                                <div class="card-info">
+                                    <div class="card-head">
+                                        <span>Income</span>
+                                        <br>
+                                        <small>Monthly Income</small>
+                                    </div>
+                                </div>
+                                <div class="card-chart">
+                                    <span class="las la-wallet"></span>
+                                </div>
+                                <h2>0</h2>
+                            </div>
+                            </div>
+                    </div>
+                    </a>
+                        
+                        
+                    
+                   
+                   <div class="job-grid">
+                       <a id="projects">
+                       <div class="analytics-card">
+                           <div class="analytics-head">
+                               <h3>Number of projects pending</h3>
+                               <span class="las la-ellipsis-h"></span>
+                           </div>
+                         <div class="analytics-chart">
+                             <div class="chart-circle">
+                                 <h1>6/10</h1>
+                             </div>
+                             <div class="analytics-note"><small>Note:A lot of work left to do</small></div>
+                         </div>
+                         <div class="analytics-btn">
+                             <button>Generate Report</button>
+                         </div>
+                       </div>
+                       </a>
+                       <a id="tt">
+                       <div class="jobs">
+                <h3>Weekly Timetable<br><small>Detailed timetable <span class="las la-angle-right"></span></small> </h3>
+                        <table width="100%">
+                               <tbody>
+                                   <tr>
+                                       <td>
+                                           <span class="indicator"></span>
+                                       
+                                       </td>
+                                       <td><div>Mon</div></td>
+                                       <td><div>Tue</div></td>
+                                       <td><div>Wed</div></td>
+                                       <td><div>Thu</div></td>
+                                       <td><div>Fri</div></td>
+                                       
+                                   </tr>
+                                   <tr>
+                                    <td>
+                                        <span class="indicator">I</span>
+                                    </td>
+                                    <td>Physics</td>
+                                    <td>Chem</td>
+                                    <td>Chem</td>
+                                    <td>Lifeskills</td>
+                                    <td>Thermo</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">II</span>
+                                    </td>
+                                    <td>Scientific computing</td>
+                                    <td>Physics</td>
+                                    <td>Engineering Mechanics</td>
+                                    <td>Thermodynamics</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">III</span>
+                                    </td>
+                                    <td>Chem</td>
+                                    <td>Scientific Computing</td>
+                                    <td>Thermo</td>
+                                    <td>-</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">IV</span>
+                                    </td>
+                                    <td>-</td>
+                                    <td>Physics</td>
+                                    <td>Engineering Mechanics</td>
+                                    <td>Thermodynamics</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">V</span>
+                                    </td>
+                                    <td>Physics</td>
+                                    <td>Chem</td>
+                                    <td>Engineering Mechanics</td>
+                                    <td>Thermodynamics</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">VI</span>
+                                    </td>
+                                    <td>Physics</td>
+                                    <td>Chem</td>
+                                    <td>Engineering Mechanics</td>
+                                    <td>Thermodynamics</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="indicator">VII</span>
+                                    </td>
+                                    <td>Physics</td>
+                                    <td>Chem</td>
+                                    <td>Engineering Mechanics</td>
+                                    <td>Thermodynamics</td>
+                                    <td>Lifeskills</td>
+                                </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                       </a>
+                   </div>
+                   <div class="third">
+                       <a id="mytodo">
+                       <div class="todolist">
+                           <h2>My Todo List-</h2>
+                           <form>
+                           <input type="text" class="todo-input">
+                           <button class="todo-button" type="submit">
+                            <span class="las la-plus-square"></span>
+                           </button>
+                        </form>
+                        <div class="todo-container">
+                            <ul class="todo-list"></ul>
+                        </div>
+                                <div class="todo">
+                                    
+                                </div>
+                            
+                        
+                       </div>
+                       </a>
+                       <div class="countdowntimer">
+                           <div><h1 >Deadline in!!!</h1></div>
+                           <div class="countdown">
+                               <div class="container">
+                               <div class="container-day" id="time">
+                                   <h3 class="day">Time</h3>
+<h3>Day</h3>                               </div>
+<div class="container-hour" id="time">
+    <h3 class="hour">Time</h3>
+<h3>Hour</h3>                               </div>
+<div class="container-minute" id="time">
+    <h3 class="minute">Time</h3>
+<h3>Minute</h3>                               </div>
+<div class="container-second" id="time">
+    <h3 class="second">Time</h3>
+<h3>Second</h3>                               </div>
+</div>
+<img class="clock" src="clock.png">
+                               
+                           </div>
+                       </div>
+                   </div>
+                   <div class="fourth">
+                       <a id="calenders">
+                       <div class="calender">
+                           <h1>My Calender</h1>
+                           <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23E67C73&amp;ctz=Asia%2FKolkata&amp;src=c2hyaXlhc2h1a2xhMjkwMUBnbWFpbC5jb20&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%230B8043&amp;showPrint=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                   </div>
+                   </a>
+                </div>
+                <div class="fifth">
+                    <a id="play">
+                    <div class="playlist">
+                    <h1>My Learning Playlist</h1>
+                    <div class="yt">
+                        <div><iframe width="300" height="200" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div><iframe width="300" height="200" src="https://www.youtube.com/embed/-cMqr9HpZ-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div><iframe width="300" height="200" src="https://www.youtube.com/embed/ZB7BZMhfPgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    </div></a>
+
+                </div>
+               </main>
+           </div>
+
+           <script src="app.js"></script>
+        
+        
+    </body>
+</html>

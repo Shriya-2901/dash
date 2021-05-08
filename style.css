@@ -1,0 +1,516 @@
+*
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.sidebar
+{
+    width:280px;
+    position:fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background:linear-gradient(grey, black );
+    color:white;
+    transition: margin-left 0.3s;
+    box-shadow:  black;
+}
+.sidebar-brand
+{
+    height: 100px;
+}
+.brand-icons span{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: pink;
+}
+.sidebar-user{
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: center;
+}
+.sidebar-user img
+{
+    width:100px;
+    height: 100px;
+    border-radius:50%;
+    border:2px solid black;
+}
+.brand-flex
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-user h3{
+    font-size:1rem;
+}
+.sidebar-user span{
+    font-size: 0.85rem;
+    
+    
+}
+.sidebar-menu
+{
+    margin-top: 3rem;
+}
+.main-content
+{
+    margin-left:280px;
+    background: rgb(252, 232, 235);
+    height: 325vh;
+    transition: margin-left 300ms;
+}
+.icon{
+    color:pink;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    margin-left: 40px;
+    grid-gap: 5px;
+    
+}
+.icon span{
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+.icon :hover{
+    color: #30db97;
+}
+.menu-head{
+    font-size: 1rem;
+    font-weight: 900;
+    color: pink;
+    margin-bottom: 0.5rem;
+}
+.sidebar ul{
+    margin-bottom:1.5rem;
+}
+.sidebar-menu li{
+    margin-bottom:0.8rem;
+}
+.sidebar-menu li a{
+    color: white;
+    font-size: 00.85rem;
+    text-align: center;
+}
+.sidebar-menu li a span{
+    font-size:1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.sidebar-menu li a span :hover{
+    color:pink;
+}
+header{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+    background: rgb(87, 86, 86);
+position:fixed;
+left:280px;
+top:0;
+z-index: 20;
+width: 100%;
+transition: left 300ms;
+box-shadow: black;
+}
+
+#sidebar-toggle{
+    display:none;
+}
+#sidebar-toggle:checked ~ .sidebar{
+    left:-100%;
+}
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 0;
+}
+#sidebar-toggle:checked ~ header{
+    left:-100%;
+}
+
+.menu-toggle 
+{
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: pink;
+    transition: font-size="1.8rem" 0.3s ease;
+
+
+}
+.menu-toggle :hover
+{
+   font-size: 1.8rem;
+   cursor: pointer;
+   color: white;
+}
+main{
+    
+    padding:1.5rem;
+   margin-top: 70px;
+    height: 100vh;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.5rem;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.header-actions button{
+    outline: none;
+    background:rgb(255, 212, 218);
+    border:none;
+    font-weight: 600;
+    padding:0.6rem 1rem;
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+.header-actions button span{
+    font-size: 1.2rem;
+    margin-right:.6rem;
+}
+.search{color: pink;
+font-size:25px;}
+.search input{
+    width: 190px;
+    height: 30px;
+    
+    
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 20px;
+    background: transparent;
+    color: pink;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
+    margin-top: 2rem;
+}
+.card-single{
+    
+    background: pink;
+    padding: 1rem;
+    box-shadow:  3px 2px 6px black;
+    border-radius: 16px;
+}
+.card-flex
+{
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+}
+.card-head span{
+    display: block;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-head small{
+    font-weight: 600;
+    
+}
+.card-info h2{
+    font-size:2.3rem;
+    color:chocolate;
+}
+.card-chart span{
+color:#393d39;
+font-size: 3rem;
+}
+.job-grid{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns:auto 70% ;
+    grid-gap:3rem;
+}
+.analytics-card{
+    background:transparent;
+    padding: 1.5rem;
+    height: 400px;
+}
+.analytics-head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.analytics-head span{
+    font-size: 1.5rem;
+}
+.analytics-chart small{
+    font-weight: 600;
+    color:red;
+    display: block;
+}
+.chart-circle{
+    height: 150px;
+    width:150px;
+    
+    
+    border-top: 5px solid rgb(255, 145, 163);
+    border-left-style: 0px solid transparent ;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgb(255, 145, 163);
+    display: grid;
+    place-items:center;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.analytics-card button{
+    display: block;
+    padding: 0.6rem 1rem;
+    width:100%;
+    height:45px;
+    background: black;
+    margin-top: 0.7rem;
+    border-radius: 10px;
+    color:hotpink;
+    
+}
+.analytics-card button :hover{
+    cursor: pointer;
+}
+.jobs h3 small{
+    margin-right: 0.5rem;
+    color:blueviolet;
+    font-size: 0.9rem;
+}
+
+.jobs table {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.jobs table td div{
+    
+    margin-bottom: 0.5rem;
+    padding: 1rem ;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-size:1.2rem;
+
+}
+.jobs table td span{
+    color: rgb(255, 29, 142);
+    font-weight: bold;
+    
+    height: 100%;
+    width: 100%;
+}
+.jobs table td{
+    text-align: center;
+    background-color: white;
+    padding
+    : 1rem;
+}
+.third
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    margin-top:20px;
+}
+.todolist
+{
+    background: white;
+}
+.third h2{
+   text-decoration: underline;
+   text-align: center;
+   margin-bottom: 15px;
+}
+.third form{
+    text-align: center;
+}
+.third form input{
+    width:200px;
+    margin:5px;
+    border-radius: 10px;
+    height: 30px;
+}
+.third form button{
+    background: #57d64b;
+    color: white;
+    width:50px;
+    height: 30px;
+    border-radius: 10px;
+    font-size:20px;
+    
+    transition: all 0.3s ease;
+}
+.todo-container
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.todo-List{
+    min-width: 30%;
+    list-style:none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.todolist{background: linear-gradient(black, gray);
+height: 100%;
+border-radius: 20px;
+color:hotpink;}
+.todo{
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size:1rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s ease;
+    box-shadow:4px black;
+    border-radius: 10px;
+    
+
+}
+.todo li{
+    flex:1;
+}
+
+.trash-btn, .complete-btn{
+    background: black;
+    color:white;
+    border:none;
+    padding:0.5rem;
+    cursor:pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+
+    color: rgb(99, 161, 36);
+}
+
+.todo-item{
+    padding:0.5rem;
+}
+.la-trash, .la-check
+{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translate(8rem) rotate(20deg);
+    opacity:0;
+}
+.countdowntimer{
+    background: white;
+    margin: 20px;
+    height: 0px;
+    
+}
+.countdowntimer h1{color:red;
+    text-align: center;
+background-color: black;
+color:hotpink;
+font-weight: bold;}
+.countdowntimer img{
+    margin-top:50px;
+}
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+   text-align: center;
+   margin-top: 20px;
+   
+}
+#time{
+    padding: 15px;
+}
+.day, .hour, .minute, .second{
+    font-size:2rem;
+}
+
+.fourth{
+    display: grid;
+    margin-top: 100px;
+    height: 300px;
+    margin-top:20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+.calender h1{
+    padding:10px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: black;
+    color:hotpink;
+}
+.fifth{
+    text-align: center;
+    height: fit-content;
+}
+.fifth h1{
+    padding:10px;
+    background-color: black;
+    color: hotpink;
+}
+.yt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:10px;
+
+}
+.yt div{
+    margin-left:20px;
+}
+@media screen and (max-width: 700px){
+    .yt{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .third{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .job-grid{
+        display:flex;
+        flex-direction: column;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+    }
+}
